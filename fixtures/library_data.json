@@ -1,0 +1,78 @@
+[
+    {
+        "model": "library.author",
+        "pk": 1,
+        "fields": {
+            "name": "Mr. X",
+            "biography": "Mr. X is an American author."
+        }
+    },
+    {
+        "model": "library.author",
+        "pk": 2,
+        "fields": {
+            "name": "Eren",
+            "biography": "Eren is an Japanese author."
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 1,
+        "fields": {
+            "title": "Harry Potter",
+            "author": "1",
+            "ISBN":"123456789",
+            "category": "Fantasy",
+            "availability_status": true
+        }
+    },
+    {
+        "model": "library.book",
+        "pk": 2,
+        "fields": {
+            "title": "Alice' Adventures in Wonderland",
+            "author": "1",
+            "ISBN":"987654321",
+            "category": "Fantasy",
+            "availability_status": true
+        }
+    },
+    {
+        "model": "library.member",
+        "pk": 1,
+        "fields": {
+            "name": "Lana Del",
+            "email": "lana@gmail.com",
+            "membership_date":"2025-02-05T02:45:04.629624"
+        }
+    },
+    {
+        "model": "library.member",
+        "pk": 2,
+        "fields": {
+            "name": "Ariana",
+            "email": "ariana@gmail.com",
+            "membership_date":"2025-02-02T15:45:04.62962"
+        }
+    },
+    {
+        "model": "library.borrowrecord",
+        "pk": 1,
+        "fields": {
+            "book": 1,
+            "member": 1,
+            "borrow_date":"2025-02-07T11:45:04.629624",
+            "return_date":null
+        }
+    },
+    {
+        "model": "library.borrowrecord",
+        "pk": 2,
+        "fields": {
+            "book": 2,
+            "member": 2,
+            "borrow_date":"2025-01-23T08:45:04.629624",
+            "return_date":null
+        }
+    }
+]

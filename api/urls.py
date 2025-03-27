@@ -4,6 +4,9 @@ from rest_framework_nested import routers
 
 router = routers.DefaultRouter()
 router.register('books',BookViewSet) 
+router.register('authors',AuthorViewSet) 
+router.register('members',MemberViewSet) 
+router.register('borrowrecordes',BorrowRecordViewSet) 
 
 urlpatterns = [
     path('',include(router.urls)),
